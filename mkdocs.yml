@@ -1,0 +1,56 @@
+site_name: Janek's Home Assistant documentation
+site_description: 'Reference for setting up Home Assistant'
+site_author: 'Janek Kröger'
+docs_dir: 'docs/'
+
+repo_name: 'jkrgr0/home-assistant-docs'
+repo_url: 'https://github.com/jkrgr0/home-assistant-docs'
+
+theme:
+  name: 'material'
+  language: en
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  font:
+    text: Roboto
+    code: Fira Code
+  icon:
+    logo: material/home-heart
+
+nav:
+  - Home: index.md
+  - Installation: installation/installation.md
+  - Home Assistant Add-Ons:
+    - InfluxDB: add-ons/influxdb.md
+  - Home Assistant Dashboards:
+    - UI Lovelace Minimalist: dashboards/lovelace.md
+    - UI Lovelace Minimalist Mobile: dashboards/lovelace-mobile.md
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
+      - reject
+
+copyright: >
+  Copyright &copy; 2023 Janek Kröger –
+  <a href="#__consent">Change cookie settings</a>
+
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+plugins:
+  - offline:
+      enabled: true

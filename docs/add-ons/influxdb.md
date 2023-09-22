@@ -1,0 +1,5 @@
+# InfluxDB
+
+```bash
+influx
+```
